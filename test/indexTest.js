@@ -28,9 +28,9 @@ describe('Fix the Scope', function() {
 
   describe('overwriteBestCustomer()', function() {
     it('overwrites the best customer', function() {
-      console.log(bestCustomer, "is bestCustomer value now");
+      console.log(window.bestCustomer, "is bestCustomer value now");
       overwriteBestCustomer('maybe bob');
-      console.log(bestCustomer, "is bestCustomer value now");
+      console.log(window.bestCustomer, "is bestCustomer value now");
       expect(window.bestCustomer).to.equal('maybe bob');
     });
   });
